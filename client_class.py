@@ -4,7 +4,12 @@ class Client:
         self.balance = balance
 
     def can_afford( self, amount:int ) -> bool:
-        pass
+        if amount <= 0:
+            return False
+        if not self.can_afford(amount):
+            return False
+        self.balance -= amount
+        return True
 
     def charge( self, amount:int ):
         pass
