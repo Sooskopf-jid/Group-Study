@@ -26,4 +26,4 @@ class Client:
         return True
 
     def __repr__(self):
-        pass
+        return f'{self.name}: {self.balance}'
