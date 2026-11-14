@@ -25,11 +25,5 @@ class Station:
     def add_bike(self, bike: Bike) -> None:
         self.bikes.append(bike)
 
-    def take_bike(self, bike_type: str | None = None) -> Bike | None:
-        for index, bike in enumerate(self.bikes):
-            if bike_type is None or bike.bike_type == bike_type:
-                return self.bikes.pop(index)
-        return None
-
     def count_bikes(self) -> int:
         return len(self.bikes)
