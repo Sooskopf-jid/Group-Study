@@ -39,4 +39,8 @@
 3. Владислав Дронюк (файл part_3.py)
 4. Богдан Світельський (файл main.py)
 
+# Презентація
+<img width="1810" height="552" alt="image" src="https://github.com/user-attachments/assets/7e864893-dc80-45d0-b35c-60c5c7c95368" />
+
+
 
