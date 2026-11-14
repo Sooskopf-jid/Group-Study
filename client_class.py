@@ -20,7 +20,10 @@ class Client:
         return True
 
     def topup( self, amount:int ):
-        pass
+        if amount <= 0:
+            return False
+        self.balance += amount
+        return True
 
     def __repr__(self):
         pass
