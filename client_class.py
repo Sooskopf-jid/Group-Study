@@ -12,7 +12,12 @@ class Client:
         return True
 
     def charge( self, amount:int ):
-        pass
+        if amount <= 0:
+            return False
+        if not self.can_afford(amount):
+            return False
+        self.balance += amount
+        return True
 
     def topup( self, amount:int ):
         pass
