@@ -11,7 +11,7 @@ def rent_bike(client, station, bike_id):
             break
 
     if found_bike == None:
-        return "Bike not found"
+        raise "BikeNotFound"
 
     station.bikes.remove(found_bike)
     client.current_bike = found_bike
@@ -27,7 +27,7 @@ def return_bike(client, station, minutes):
     global total_revenue
 
     if client.current_bike == None:
-        return "You don't have bike to return"
+        raise "BikeNotFound"
 
     bike = client.current_bike
     cost = calculate_trip_cost(bike, minutes)
